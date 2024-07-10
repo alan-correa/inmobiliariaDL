@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite DE Grund", cursive;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #4F465C;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-list a:hover {
+    background-color: #D7C7C7;
+    border-radius: 5px;
+}
+.tittle-section {
+    background-image: url('../images/img-main.jpeg');
+    background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    text-align: center;
+}
+
+.propiedades-venta, .propiedades-alquiler {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px 30px;
+}
+
+.cards {
+    width: 370px;
+    border: 1px solid silver;
+    height: 100%;
+}
+
+.ventas-cuerpo {
+    padding: 15px 10px 30px 10px;
+}
+
+.ventas-tittle {
+    padding: 10px 0;
+}
+
+.ventas-icon {
+    width: 20px;
+    margin: 0 3px;
+}
+
+.ventas-img {
+    width: 100%;
+}
+
+.ventas-ubicacion, .ventas-habitaciones, .ventas-costo {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+strong {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+strong i {
+    margin: 0 3px;
+}
+
+main button {
+    padding: 5px 10px;
+    margin: 10px 10px 10px 35px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+main button:hover {
+    opacity: 0.8;
+}
+
+@media (width <= 572px) {
+
+    body {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .cards {
+        width: 320px;
+    }
+}
